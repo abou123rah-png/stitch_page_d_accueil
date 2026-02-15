@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Physique Seconde S - Sénégal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a47c2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f6f8;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sidebar-active {
+            background-color: rgba(10, 71, 194, 0.1);
+            color: #0a47c2;
+            border-left: 4px solid #0a47c2;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900">
+<div class="flex min-h-screen">
+<!-- Sidebar Navigation -->
+<aside class="w-64 bg-white border-r border-slate-200 flex flex-col fixed h-full z-10">
+<div class="p-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">science</span>
+</div>
+<div>
+<h1 class="text-sm font-bold leading-tight">Physique 2<sup>de</sup> S</h1>
+<p class="text-xs text-slate-500 font-medium">Sénégal • 2024</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="sidebar-active flex items-center gap-3 px-3 py-2.5 rounded text-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    Tableau de bord
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+                    Mon Profil
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">analytics</span>
+                    Statistiques
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+                    Favoris
+                </a>
+<div class="pt-4 pb-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3">Administration</div>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+                    Paramètres
+                </a>
+</nav>
+<div class="p-4 border-t border-slate-100">
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">workspace_premium</span>
+<span class="text-xs font-bold text-slate-700">Premium Plan</span>
+</div>
+<p class="text-[10px] text-slate-500 mb-2">Accédez à tous les devoirs corrigés.</p>
+<button class="w-full py-1.5 bg-primary text-white text-[11px] font-bold rounded-md hover:bg-primary/90 transition-colors">
+                        Mettre à niveau
+                    </button>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-64 p-8">
+<!-- Header Section -->
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="text-3xl font-black text-slate-900 tracking-tight">Bonjour, Ousmane</h2>
+<p class="text-slate-500 mt-1">Prêt pour votre séance de révision en Physique ?</p>
+</div>
+<div class="flex gap-3">
+<div class="text-right">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Date du jour</p>
+<p class="text-sm font-semibold text-slate-700">14 Mai 2024</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-6">
+<!-- Top Stats Column -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-6">
+<!-- Global Progress Card -->
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-bold text-slate-800">Progression Globale du Programme</h3>
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">65% Terminé</span>
+</div>
+<div class="w-full bg-slate-100 h-3 rounded-full mb-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[65%] shadow-[0_0_10px_rgba(10,71,194,0.3)]"></div>
+</div>
+<div class="flex justify-between text-xs text-slate-500 font-medium">
+<span>8 chapitres sur 12</span>
+<span>Prochain examen : 15 Juin</span>
+</div>
+</div>
+<!-- Metrics Grid -->
+<div class="grid grid-cols-3 gap-6">
+<div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-lg bg-green-50 text-green-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">military_tech</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase">Score Moyen</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-slate-900">14.5</span>
+<span class="text-sm font-semibold text-slate-400">/20</span>
+</div>
+<div class="mt-2 flex items-center text-xs text-green-600 font-bold">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+<span class="ml-1">+1.2 pts</span>
+</div>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">schedule</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase">Temps d'étude</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-slate-900">42</span>
+<span class="text-sm font-semibold text-slate-400">Heures</span>
+</div>
+<div class="mt-2 flex items-center text-xs text-primary font-bold">
+<span class="material-symbols-outlined text-xs">history</span>
+<span class="ml-1">5h cette semaine</span>
+</div>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">assignment_turned_in</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase">Exercices</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-black text-slate-900">128</span>
+<span class="text-sm font-semibold text-slate-400">complétés</span>
+</div>
+<div class="mt-2 flex items-center text-xs text-slate-400 font-bold">
+<span class="ml-1">86% de réussite</span>
+</div>
+</div>
+</div>
+<!-- Recent Exercises Table -->
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+<div class="p-5 border-b border-slate-100 flex justify-between items-center">
+<h3 class="font-bold text-slate-800">Activités Récentes</h3>
+<button class="text-xs font-bold text-primary hover:underline">Voir tout</button>
+</div>
+<div class="divide-y divide-slate-50">
+<div class="p-4 flex items-center justify-between hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-slate-500">
+<span class="material-symbols-outlined">quiz</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-800">QCM: Énergie Cinétique</p>
+<p class="text-xs text-slate-400">Terminé le 12 Mai • 15:30</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-sm font-bold text-green-600">18/20</p>
+<p class="text-[10px] text-slate-400 uppercase font-bold tracking-tight">Excellent</p>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-slate-500">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-800">Exercice 4.2: Chute libre</p>
+<p class="text-xs text-slate-400">Terminé le 10 Mai • 18:15</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-sm font-bold text-primary">14/20</p>
+<p class="text-[10px] text-slate-400 uppercase font-bold tracking-tight">Bien</p>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-slate-500">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-800">Lecture: Champ Magnétique</p>
+<p class="text-xs text-slate-400">Consulté le 09 Mai • 11:00</p>
+</div>
+</div>
+<div class="text-right">
+<span class="material-symbols-outlined text-slate-300">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Quick Actions Column -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
+<!-- Quick Access Buttons -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-slate-200 rounded-xl hover:border-primary hover:shadow-md hover:shadow-primary/5 transition-all group">
+<div class="w-12 h-12 rounded-full bg-slate-50 text-slate-600 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">book_4</span>
+</div>
+<span class="text-xs font-bold text-slate-700">Cours</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-slate-200 rounded-xl hover:border-primary hover:shadow-md hover:shadow-primary/5 transition-all group">
+<div class="w-12 h-12 rounded-full bg-slate-50 text-slate-600 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">edit_note</span>
+</div>
+<span class="text-xs font-bold text-slate-700">Exercices</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-slate-200 rounded-xl hover:border-primary hover:shadow-md hover:shadow-primary/5 transition-all group">
+<div class="w-12 h-12 rounded-full bg-slate-50 text-slate-600 group-hover:bg-primary/10 group-hover:text-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">post_add</span>
+</div>
+<span class="text-xs font-bold text-slate-700">Générer devoir</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 bg-primary text-white rounded-xl hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<span class="text-xs font-bold">Assistant IA</span>
+</button>
+</div>
+<!-- Chapters Progress -->
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex-1">
+<div class="p-5 border-b border-slate-100">
+<h3 class="font-bold text-slate-800">Programme de Seconde S</h3>
+</div>
+<div class="p-4 space-y-5">
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-slate-700">Mesures et Incertitudes</span>
+<span class="text-primary">100%</span>
+</div>
+<div class="w-full h-1.5 bg-slate-100 rounded-full">
+<div class="bg-green-500 h-full rounded-full w-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-slate-700">Mouvement et Vitesse</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="w-full h-1.5 bg-slate-100 rounded-full">
+<div class="bg-primary h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-slate-700">Forces et Équilibre</span>
+<span class="text-primary">40%</span>
+</div>
+<div class="w-full h-1.5 bg-slate-100 rounded-full">
+<div class="bg-primary h-full rounded-full w-[40%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-2 text-slate-400">
+<span>Chimie : Atomes et Ions</span>
+<span>En attente</span>
+</div>
+<div class="w-full h-1.5 bg-slate-100 rounded-full">
+<div class="bg-slate-200 h-full rounded-full w-0"></div>
+</div>
+</div>
+<button class="w-full py-3 bg-slate-50 text-slate-600 border border-dashed border-slate-300 rounded-lg text-xs font-bold hover:bg-slate-100 transition-colors mt-4">
+                                Voir tout le programme
+                            </button>
+</div>
+</div>
+<!-- Prochain cours card -->
+<div class="relative overflow-hidden bg-primary rounded-xl p-5 text-white shadow-xl shadow-primary/20">
+<div class="relative z-10">
+<h4 class="text-sm font-bold opacity-80 mb-1">Session suggérée</h4>
+<p class="text-lg font-black mb-3">Dynamique du Solide</p>
+<div class="flex items-center gap-2 text-xs font-medium mb-4">
+<span class="material-symbols-outlined text-xs">timer</span>
+                                25 mins • Difficulté : Élevée
+                            </div>
+<button class="w-full py-2 bg-white text-primary rounded-lg text-xs font-black hover:bg-slate-100 transition-all">
+                                Commencer maintenant
+                            </button>
+</div>
+<!-- Background Pattern Decor -->
+<div class="absolute -right-4 -bottom-4 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+<div class="absolute -left-4 -top-4 w-24 h-24 bg-black/10 rounded-full blur-xl"></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

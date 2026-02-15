@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Générateur de Devoir - Physique Seconde S</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a47c2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Navigation Header -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-background-dark border-b border-primary/10 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-lg">
+<span class="material-symbols-outlined text-white text-2xl">science</span>
+</div>
+<div>
+<h1 class="text-xl font-bold tracking-tight text-primary">Physique Seconde S</h1>
+<p class="text-xs font-medium text-slate-500 uppercase tracking-widest">Sénégal • Programme National</p>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-primary border-b-2 border-primary pb-5 mt-5" href="#">Générateur</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">Banque d'exercices</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">Mes sujets</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold overflow-hidden border border-primary/30">
+<img alt="Photo de profil" class="w-full h-full object-cover" data-alt="Photo de profil d'un enseignant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9R0CNK4QmVeTHUTPIB-JReY2pfFAPqZPPNNB3JEb6q6Synw7jwtwYSqzkBBBCW3mr1-5M8GA9CIDUJWYGPf1STdWw8_kSPKXKlepliPg_lwli3Jd0ke4cNPD8ksja_zIziqcEdAfKH2X5H7f9KM1LaoccF9D8OUQY6KFiVqKaVaYzuD6ti8_Qmko32804Xq311RFTRPmy_7JqoMwQKlNURiefSa_-kADxCdsipMSPxBLES8JvMbKW5GTjGTdBF65NPDrZusnEczhr"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex mb-8 items-center text-sm font-medium text-slate-500 gap-2">
+<a class="hover:text-primary" href="#">Accueil</a>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+<span class="text-slate-900 dark:text-white font-semibold">Générateur de devoir</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Configuration -->
+<div class="lg:col-span-4 space-y-6">
+<section class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<h2 class="text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">settings</span>
+                        Configuration
+                    </h2>
+<form class="space-y-6">
+<!-- Chapter Selection -->
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300">Chapitre principal</label>
+<div class="relative">
+<select class="w-full appearance-none bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+<option value="">Sélectionner un chapitre</option>
+<option value="mesure">Mesures et incertitudes</option>
+<option value="cine">Cinématique du point</option>
+<option value="dyn">Forces et équilibre</option>
+<option selected="" value="travail">Travail et Puissance mécanique</option>
+<option value="energie">Énergie cinétique</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-slate-400">expand_more</span>
+</div>
+</div>
+<!-- Difficulty Selection -->
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300">Niveau de difficulté</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="level" type="radio"/>
+<div class="text-center py-2 px-3 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium peer-checked:bg-primary/10 peer-checked:border-primary peer-checked:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Facile</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="level" type="radio"/>
+<div class="text-center py-2 px-3 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium peer-checked:bg-primary/10 peer-checked:border-primary peer-checked:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Moyen</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="level" type="radio"/>
+<div class="text-center py-2 px-3 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium peer-checked:bg-primary/10 peer-checked:border-primary peer-checked:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Difficile</div>
+</label>
+</div>
+</div>
+<!-- Number of Exercises -->
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300">Nombre d'exercices</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" max="10" min="1" type="number" value="4"/>
+</div>
+<!-- Include Correction -->
+<div class="flex items-center gap-3 py-2">
+<input class="w-5 h-5 rounded border-slate-300 text-primary focus:ring-primary cursor-pointer" id="correction" type="checkbox"/>
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300 cursor-pointer" for="correction">Inclure la correction détaillée</label>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined">auto_awesome</span>
+                            Générer le sujet
+                        </button>
+</form>
+</section>
+<div class="bg-primary/5 dark:bg-primary/10 p-5 rounded-xl border border-primary/20 border-dashed">
+<p class="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+<strong class="text-primary">Astuce :</strong> Le générateur utilise les annales des examens nationaux du Sénégal pour garantir la conformité avec le programme de la Seconde S.
+                    </p>
+</div>
+</div>
+<!-- Right Column: Subject Preview -->
+<div class="lg:col-span-8 space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden flex flex-col h-full min-h-[700px]">
+<!-- Toolbar -->
+<div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-900">
+<div class="flex items-center gap-3">
+<h2 class="text-lg font-bold">Aperçu du sujet</h2>
+<span class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Prêt</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-lg">edit</span>
+                                Modifier
+                            </button>
+<button class="flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-slate-900 dark:bg-primary rounded-lg hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-lg">picture_as_pdf</span>
+                                Télécharger en PDF
+                            </button>
+</div>
+</div>
+<!-- Page Container -->
+<div class="flex-grow p-12 overflow-y-auto bg-slate-100 dark:bg-slate-950 flex justify-center">
+<!-- Paper Layout -->
+<div class="bg-white dark:bg-slate-900 w-full max-w-[800px] shadow-2xl p-16 text-slate-900 dark:text-slate-100 min-h-[1000px] relative">
+<!-- Paper Header -->
+<div class="flex justify-between items-start border-b-2 border-slate-900 dark:border-slate-100 pb-4 mb-8">
+<div class="text-[10px] leading-tight font-bold uppercase">
+                                    Ministère de l'Éducation Nationale<br/>
+                                    Académie de Dakar<br/>
+                                    Lycée Seydou Nourou Tall
+                                </div>
+<div class="text-[10px] leading-tight font-bold text-right uppercase">
+                                    Année Scolaire : 2023-2024<br/>
+                                    Classe : Seconde S<br/>
+                                    Durée : 2 Heures
+                                </div>
+</div>
+<div class="text-center mb-10">
+<h3 class="text-xl font-black uppercase underline underline-offset-8">Devoir de Physique-Chimie n°2</h3>
+<p class="mt-4 text-sm font-bold">Thème : Travail et Puissance Mécanique</p>
+</div>
+<!-- Exercises -->
+<div class="space-y-12">
+<!-- Exercice 1 -->
+<div class="space-y-4">
+<h4 class="font-bold underline">Exercice 1 : Travail d'une force constante (5 points)</h4>
+<p class="text-sm leading-relaxed text-justify">
+                                        Un solide de masse m = 500g glisse sur une piste ABC. La portion AB est un plan incliné d'un angle α = 30° par rapport à l'horizontale et de longueur L = 2m. On néglige les frottements sur AB.
+                                    </p>
+<ol class="list-decimal list-inside text-sm space-y-2 ml-4">
+<li>Faire le bilan des forces extérieures s'exerçant sur le solide sur le trajet AB.</li>
+<li>Exprimer le travail du poids $W_{AB}(\vec{P})$ en fonction de m, g, L et α. Calculer sa valeur. ($g = 10 N.kg^{-1}$)</li>
+<li>Quel est le travail de la réaction normale $\vec{R}$ du plan ? Justifier.</li>
+</ol>
+<div class="w-full aspect-[16/6] bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center p-4">
+<div class="relative w-full h-full flex items-center justify-center">
+<!-- Abstract Diagram Representation -->
+<svg class="stroke-slate-900 dark:stroke-slate-100 fill-none" height="100" viewbox="0 0 200 100" width="200">
+<path d="M20 80 L180 80 M20 80 L160 20" stroke-width="2"></path>
+<rect fill="currentColor" fill-opacity="0.1" height="10" transform="rotate(-23 80 40)" width="20" x="80" y="40"></rect>
+<text class="text-[8px] fill-current border-none" x="170" y="95">C</text>
+<text class="text-[8px] fill-current border-none" x="15" y="95">A</text>
+<text class="text-[8px] fill-current border-none" x="165" y="15">B</text>
+<path d="M40 80 Q50 75 55 80" stroke-width="1"></path>
+<text class="text-[8px] fill-current border-none" x="45" y="75">α</text>
+</svg>
+<div class="absolute bottom-2 right-2 text-[10px] italic text-slate-400">Figure 1 : Dispositif expérimental</div>
+</div>
+</div>
+</div>
+<!-- Exercice 2 -->
+<div class="space-y-4">
+<h4 class="font-bold underline">Exercice 2 : Puissance d'un moteur (7 points)</h4>
+<p class="text-sm leading-relaxed text-justify">
+                                        Un treuil est actionné par un moteur électrique pour soulever une charge de masse M = 200kg à une vitesse constante v = 0,5 m/s. Le câble s'enroule sur un tambour de rayon r = 10 cm.
+                                    </p>
+<ol class="list-decimal list-inside text-sm space-y-2 ml-4">
+<li>Calculer la tension T du câble.</li>
+<li>Déterminer la puissance mécanique développée par le moteur.</li>
+<li>Calculer le moment du couple moteur sachant que la vitesse de rotation est constante.</li>
+</ol>
+</div>
+</div>
+<!-- Footer Paper -->
+<div class="absolute bottom-10 left-0 w-full text-center text-[10px] font-medium text-slate-400 italic">
+                                Page 1 / 1 — Document généré via l'application Physique Seconde S Sénégal
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Success Toast (Simplified Illustration) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-slate-900 dark:bg-primary text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 animate-bounce">
+<span class="material-symbols-outlined text-emerald-400">check_circle</span>
+<span class="text-sm font-bold">Nouveau sujet généré avec succès !</span>
+</div>
+</body></html>

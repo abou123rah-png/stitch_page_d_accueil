@@ -1,0 +1,45 @@
+/* scripts/curriculum-data.json */
+[
+    {
+        "title": "Structure de la Matière",
+        "category": "CHIMIE",
+        "order": 1,
+        "description": "Atomes, molécules et classification périodique."
+    },
+    {
+        "title": "La Mole et les Solutions",
+        "category": "CHIMIE",
+        "order": 2,
+        "description": "Calculs de quantités de matière et concentration."
+    },
+    {
+        "title": "Réactions Chimiques",
+        "category": "CHIMIE",
+        "order": 3,
+        "description": "Équations-bilans et stoechiométrie."
+    },
+    {
+        "title": "Cinématique : Le Mouvement",
+        "category": "MÉCANIQUE",
+        "order": 4,
+        "description": "Mouvement rectiligne uniforme et varié."
+    },
+    {
+        "title": "Actions Mécaniques et Forces",
+        "category": "MÉCANIQUE",
+        "order": 5,
+        "description": "Généralités sur les forces et équilibre."
+    },
+    {
+        "title": "Électricité : Courant Continu",
+        "category": "ÉLECTRICITÉ",
+        "order": 6,
+        "description": "Intensité, tension et loi d'Ohm."
+    },
+    {
+        "title": "Optique : Réflexion & Réfraction",
+        "category": "OPTIQUE",
+        "order": 7,
+        "description": "Propagation de la lumière et miroirs."
+    }
+]

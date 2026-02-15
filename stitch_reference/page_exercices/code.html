@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Physique Seconde S – Sénégal | Exercices Interactifs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a47c2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-size: 24px; vertical-align: middle; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 md:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">science</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">Physique Seconde S</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Cours</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary py-1" href="#">Exercices</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Examens</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Ressources</a>
+</div>
+</div>
+<div class="flex gap-2 items-center">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">account_circle</span>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col md:flex-row max-w-[1440px] mx-auto w-full">
+<!-- Sidebar Progression -->
+<aside class="w-full md:w-80 border-r border-slate-200 dark:border-slate-800 p-6 flex flex-col gap-6 bg-white dark:bg-slate-900/50">
+<div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-sm uppercase tracking-wider text-slate-500">Votre Progression</h3>
+<span class="text-primary font-bold text-sm">40%</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[40%] rounded-full"></div>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<p class="text-xs font-semibold text-slate-400 mb-2 uppercase">Chapitres</p>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-semibold" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-sm">Cinématique</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">settings_motion_mode</span>
+<span class="text-sm">Dynamique</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">bolt</span>
+<span class="text-sm">Travail et Puissance</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">electric_bolt</span>
+<span class="text-sm">Électrocinétique</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">visibility</span>
+<span class="text-sm">Optique</span>
+</a>
+</nav>
+<div class="mt-auto p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800">
+<p class="text-xs text-slate-500 mb-2">Besoin d'aide ?</p>
+<button class="w-full py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium hover:shadow-sm transition-all">
+                            Contacter un tuteur
+                        </button>
+</div>
+</aside>
+<!-- Workspace Section -->
+<section class="flex-1 flex flex-col p-4 md:p-8 bg-background-light dark:bg-background-dark">
+<!-- Breadcrumbs & Filters -->
+<div class="flex flex-col gap-6 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-500">
+<a class="hover:text-primary" href="#">Accueil</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Exercices</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-white font-medium">Cinématique</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Exercices : Cinématique</h1>
+<p class="text-slate-500 mt-1">Série n°4 : Mouvement Rectiligne Uniforme (MRU)</p>
+</div>
+<div class="flex items-center bg-white dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+<span class="px-3 text-xs font-bold text-slate-400 uppercase">Difficulté</span>
+<button class="px-4 py-1.5 rounded-lg text-sm font-semibold bg-primary text-white shadow-md">Facile</button>
+<button class="px-4 py-1.5 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">Moyen</button>
+<button class="px-4 py-1.5 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">Avancé</button>
+</div>
+</div>
+</div>
+<!-- Question Container -->
+<div class="flex flex-col gap-8">
+<!-- Question 1: QCM -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase">Question 1</span>
+<span class="text-slate-400">•</span>
+<span class="text-sm text-slate-500">2 Points</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">
+                                    Un véhicule parcourt 150 km en 2 heures. Quelle est sa vitesse moyenne en m/s ?
+                                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="relative flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 cursor-pointer hover:border-primary/30 transition-all group">
+<input class="w-5 h-5 text-primary border-slate-300 focus:ring-primary" name="q1" type="radio"/>
+<span class="ml-4 text-slate-700 dark:text-slate-300 font-medium">20,83 m/s</span>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border-2 border-primary bg-primary/5 cursor-pointer transition-all group">
+<input checked="" class="w-5 h-5 text-primary border-slate-300 focus:ring-primary" name="q1" type="radio"/>
+<span class="ml-4 text-primary font-bold">20,83 m/s</span>
+<span class="ml-auto material-symbols-outlined text-primary">check_circle</span>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 cursor-pointer hover:border-primary/30 transition-all group">
+<input class="w-5 h-5 text-primary border-slate-300 focus:ring-primary" name="q1" type="radio"/>
+<span class="ml-4 text-slate-700 dark:text-slate-300 font-medium">75 m/s</span>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 cursor-pointer hover:border-primary/30 transition-all group">
+<input class="w-5 h-5 text-primary border-slate-300 focus:ring-primary" name="q1" type="radio"/>
+<span class="ml-4 text-slate-700 dark:text-slate-300 font-medium">15,5 m/s</span>
+</label>
+</div>
+<div class="mt-8 flex gap-4">
+<button class="px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">Valider</button>
+<button class="px-6 py-3 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">Passer</button>
+</div>
+</div>
+<!-- Detailed Correction -->
+<div class="bg-primary/5 border-t border-primary/10 p-6 md:p-8">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined">auto_fix_high</span>
+<h3 class="font-bold">Correction détaillée</h3>
+</div>
+<div class="space-y-4 text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+<p>1. <strong>Convertir la distance :</strong> d = 150 km = 150 000 m.</p>
+<p>2. <strong>Convertir le temps :</strong> t = 2 h = 2 × 3600 s = 7200 s.</p>
+<p>3. <strong>Appliquer la formule :</strong> v = d / t = 150 000 / 7200 = <strong>20,83 m/s</strong>.</p>
+<p class="italic text-slate-500 mt-2">Astuce : Pour passer de km/h à m/s, divisez directement par 3,6.</p>
+</div>
+</div>
+</div>
+<!-- Question 2: Open Text -->
+<div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden opacity-90">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase">Question 2</span>
+<span class="text-slate-400">•</span>
+<span class="text-sm text-slate-500">3 Points</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">
+                                    Définissez le vecteur vitesse instantanée en un point M d'une trajectoire.
+                                </h2>
+<textarea class="w-full bg-slate-50 dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 rounded-xl p-4 focus:border-primary focus:ring-0 transition-all placeholder:text-slate-400" placeholder="Rédigez votre réponse ici..." rows="4"></textarea>
+<div class="mt-8 flex gap-4">
+<button class="px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Valider</button>
+<button class="px-6 py-3 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold rounded-xl">Plus tard</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Footer -->
+<div class="mt-12 flex items-center justify-between border-t border-slate-200 dark:border-slate-800 pt-8 pb-12">
+<button class="flex items-center gap-2 px-4 py-2 text-slate-500 font-bold hover:text-primary transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+                            Précédent
+                        </button>
+<div class="flex gap-2">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-primary text-white font-bold text-sm">1</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 font-bold text-sm">2</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 font-bold text-sm">3</button>
+<span class="px-2">...</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 font-bold text-sm">12</button>
+</div>
+<button class="flex items-center gap-2 px-6 py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold rounded-xl hover:opacity-90 transition-all">
+                            Suivant
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Right Utility Sidebar (Visual elements/Diagrams) -->
+<aside class="hidden lg:flex w-72 flex-col p-6 gap-6 bg-slate-50 dark:bg-slate-900/20">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+<h4 class="font-bold text-sm mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">info</span>
+                            Aide Visuelle
+                        </h4>
+<div class="aspect-square bg-slate-100 dark:bg-slate-900 rounded-lg flex flex-col items-center justify-center border border-dashed border-slate-300 dark:border-slate-600 p-4">
+<!-- SVG Placeholder for Physics Diagram -->
+<svg class="w-full h-full text-slate-300" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<line stroke="currentColor" stroke-width="2" x1="10" x2="90" y1="80" y2="80"></line>
+<line stroke="currentColor" stroke-width="2" x1="10" x2="10" y1="10" y2="80"></line>
+<path d="M10 80 Q 50 10 90 80" fill="none" stroke="#0a47c2" stroke-width="2"></path>
+<circle cx="50" cy="45" fill="#0a47c2" r="3"></circle>
+<text fill="currentColor" font-size="6" text-anchor="middle" x="90" y="90">x(t)</text>
+<text fill="currentColor" font-size="6" x="5" y="10">v</text>
+</svg>
+<p class="text-[10px] text-slate-400 mt-2 text-center">Diagramme de mouvement rectiligne</p>
+</div>
+</div>
+<div class="bg-primary text-white p-5 rounded-xl shadow-lg shadow-primary/20">
+<h4 class="font-bold text-sm mb-2">Formulaire Clé</h4>
+<div class="space-y-3 font-mono text-xs">
+<div class="bg-white/10 p-2 rounded">v = d / Δt</div>
+<div class="bg-white/10 p-2 rounded">a = Δv / Δt</div>
+<div class="bg-white/10 p-2 rounded">x(t) = v.t + x₀</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-xs text-slate-400 uppercase">Documents liés</h4>
+<a class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-red-500">picture_as_pdf</span>
+<span class="text-xs font-semibold group-hover:text-primary transition-colors">Cours_Cinematique.pdf</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-green-500">description</span>
+<span class="text-xs font-semibold group-hover:text-primary transition-colors">TP_Mesures_Vitesse.docx</span>
+</a>
+</div>
+</aside>
+</main>
+</div>
+</div>
+</body></html>

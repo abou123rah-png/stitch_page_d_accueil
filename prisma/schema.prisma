@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+  engineType    = "library"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  password      String?
+  role          Role      @default(STUDENT)
+  progress      Progress[]
+  scores        Score[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+enum Role {
+  STUDENT
+  TEACHER
+  ADMIN
+}
+
+model Chapter {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  category    String   // Mechanics, Electricity, Optics, Matter
+  order       Int
+  lessons     Lesson[]
+  exercises   Exercise[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Lesson {
+  id          String   @id @default(cuid())
+  chapterId   String
+  chapter     Chapter  @relation(fields: [chapterId], references: [id])
+  title       String
+  content     String   // Markdown or HTML
+  formulas    String?  // JSON string or structured text
+  pdfUrl      String?  // External link to PDF
+  order       Int
+  progress     Progress[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Exercise {
+  id            String   @id @default(cuid())
+  chapterId     String
+  chapter       Chapter  @relation(fields: [chapterId], references: [id])
+  difficulty    Difficulty @default(MEDIUM)
+  question      String?  // Kept for backward compatibility
+  statement     String?  // Extensive problem description
+  solution      String?  // Detailed correction
+  options       String?  // JSON string of options (Optional for problems)
+  correctAnswer String?  // (Optional for problems)
+  explanation   String?
+  scores        Score[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model Progress {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  lessonId    String
+  lesson      Lesson   @relation(fields: [lessonId], references: [id])
+  completedAt DateTime @default(now())
+
+  @@unique([userId, lessonId])
+}
+
+model Score {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  exerciseId  String
+  exercise    Exercise @relation(fields: [exerciseId], references: [id])
+  score       Int
+  attemptedAt DateTime @default(now())
+}
