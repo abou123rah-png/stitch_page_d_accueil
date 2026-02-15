@@ -7,7 +7,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="sidebar-header">
         <h2>Lycée Thiaroye</h2>
-        <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '4px' }}>Mr. Doro Cissé</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '4px' }}>Mr. Doro Cissé</p>
       </div>
 
       <nav className="sidebar-nav">
